@@ -12,7 +12,7 @@ module.exports = (env, argv) => {
       path: path.resolve(__dirname, 'dist'),
       filename: 'bundle.js',
     },
-    resolve: {
+  resolve: {
       fallback: {
         fs: false, // Evita cargar el módulo 'fs'
         path: require.resolve('path-browserify'), // Utiliza el módulo 'path-browserify' en su lugar
