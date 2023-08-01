@@ -1,38 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SignUp Page</title>
-    <link href="../css/estilos.css" rel="stylesheet" />
+    <title>Registrarse</title>
   </head>
   <body>
-    <div class="contenedor">
-      <h2>Sign Up</h2>
-      <form id="forma" name="forma">
-        <!--Datos Usuario-->
-        <div class="elemento">
-          <!--Dato Usuario-->
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required="true" />
-        </div>
-        <div class="elemento">
-          <!--Dato Password-->
-          <label for="password">Contraseña</label>
-          <input
-            type="password"
-            id="password"
-            name="password"
-            required="true"
-          />
-        </div>
-        <div class="elemento">
-          <!--Boton Enviar-->
-          <input type="submit" value="Enviar" />
-        </div>
+    <div class="container">
+      <h1>Registrarse</h1>
+      <form id="signupForm">
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          class="email-icon"
+          placeholder="Introduce tu email"
+          required
+        />
+
+        <label for="password">Contraseña:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          class="password-icon"
+          placeholder="Introduce tu contraseña"
+          required
+        />
+
+        <input type="submit" value="Registrarse" />
       </form>
-      <script src="bundle.js"></script>
-      <script src="index.js"></script>
     </div>
+    <script src="bundle.js"></script>
   </body>
 </html>
