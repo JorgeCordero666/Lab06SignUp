@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignUp Page</title>
+    <link href="../css/estilos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="contenedor">
+      <h2>Sign Up</h2>
+      <form id="forma" name="forma">
+        <!--Datos Usuario-->
+        <div class="elemento">
+          <!--Dato Usuario-->
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required="true" />
+        </div>
+        <div class="elemento">
+          <!--Dato Password-->
+          <label for="password">Contraseña</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required="true"
+            value="1234"
+          />
+        </div>
+        <div class="elemento">
+          <!--Boton Enviar-->
+          <input type="submit" value="Enviar" />
+        </div>
+      </form>
+      <script src="bundle.js"></script>
+    </div>
+  </body>
+</html>
